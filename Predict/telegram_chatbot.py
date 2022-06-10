@@ -64,7 +64,7 @@ class Chatbot():
 
 
     def input_category(self,input_data):
-        df = pd.read_csv('G:\\내 드라이브\\Watch_You\\test.csv')
+        df = pd.read_csv('G:\\내 드라이브\\Watch_You\\input_label.csv')
         input_len = len(df['C'])
         for i in range(input_len):
             menu = df.iloc[i]
