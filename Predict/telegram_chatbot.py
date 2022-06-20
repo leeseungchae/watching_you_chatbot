@@ -103,13 +103,13 @@ class Chatbot():
                     print(num)
                     print(value)
                     if value < num:
-                        print(c+'50이하')
+                        print(c+'50이하!')
                         self.bot.send_message(chat_id=self.id, text='조금 더 정확하게 말씀해 주세요')
                         self.count = 1
                         print(1)
                         return 1
                     else:
-                        print(c+'50이상')
+                        print(c+'50이상!')
                         test_eval.append(c)
                         value = logits[k]
                         self.input_category(c)
